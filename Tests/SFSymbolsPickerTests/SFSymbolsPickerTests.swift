@@ -6,6 +6,6 @@ final class SFSymbolsPickerTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(SFSymbolsPicker().text, "Hello, World!")
+//        XCTAssertEqual(SFSymbolsPicker().text, "Hello, World!")
     }
 }
