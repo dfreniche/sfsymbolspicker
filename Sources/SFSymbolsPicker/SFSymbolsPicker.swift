@@ -32,7 +32,6 @@ public struct SFSymbolsPicker: View {
             
             TextField("Filter", text: $filterText)
                 .onChange(of: filterText) { newValue in
-                    print(newValue)
                     self.symbols = self.originalSymbols.filter { $0.symbolName.contains(newValue.lowercased()) }
                 }
                 .padding()
