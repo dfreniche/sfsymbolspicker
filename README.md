@@ -48,6 +48,11 @@ Image(systemName: symbol.symbolName)
 
 There's an Example that let's you select a Symbols, shows it in the main screen and copies the symbol name to the Pasteboard.
 
+
+|Filtering |Pick color  |Paste |
+| --- | --- | --- |
+|![](img/SampleFilter.gif)|![](img/SamplePickColor.gif)|![](img/SampleCopy.gif)|
+
 ## LICENSE 
 
 See [License file](/LICENSE)
