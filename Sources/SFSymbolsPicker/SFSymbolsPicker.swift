@@ -30,8 +30,13 @@ public struct SFSymbolsPicker: View {
         ScrollView {
             // Filter Text
             
-            TextField("Filter", text: $filterText)
+            TextField("Filter \(symbols.count) icons, \(sfSymbolNames.count - symbols.count) restricted", text: $filterText)
                 .onChange(of: filterText) { newValue in
+                    guard !newValue.isEmpty else {
+                        self.symbols = self.originalSymbols
+                        return
+                    }
+                    
                     self.symbols = self.originalSymbols.filter { $0.symbolName.contains(newValue.lowercased()) }
                 }
                 .padding()
